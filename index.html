@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Welcome to my portfolio! See my personal projects & work in front-end, back-end...">
+    <meta name="author" content="Camilo Tuñón">
+    <title>Camilo Tuñón - Software Developer</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="archivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="main-container">
+    <header class="header">
+        <div class="title-photo-container">
+            <h1><a class="h1-to-home" href="index.html">Camilo Tuñón</a></h1>
+            <h1 class="presentation">Camilo Tuñón</h1>
+            <h1 class="presentation2">Full Stack Developer</h1>
+        </div>
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navMenu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background-bar"></div>
+    <main>
+        <!-- Contenido de la sección About -->
+        <section id="about">
+            <h1 class="h1"></h1>
+            <div class="about">
+                <h3 class="about-h3">
+                    I'm a Bug Wrangler in Training.<br>
+                    Based in Panama. <br>
+                    I've 28 years old. <br>
+                    I am a fan of all digital things,
+                    but I had never taken the time
+                    to learn how to create it. <br>
+                    I adore my amazing wife, but my relationship
+                    with ice cream is something special;
+                    she understands it. </h3>
+                <img src="foto-portafolio-1.jpg" alt="yo" class="foto-portafolio-1">
+            </div>
+        </section>
+
+        <!--Contenido de la sección Skills-->
+        <section id="skills" class="skills">
+            <div class="content">
+                <div class="skills-text">
+                    <h1 class="h1-skill">The arsenal of oddities</h1>
+                </div>
+                <div class="skills-content">
+                    <article class="skills-card">HTML<br> <span style="font-size: 20px;">html5</span></article>
+                    <article class="skills-card">CSS<br> <span style="font-size: 20px;">css3</span></article>
+                    <article class="skills-card">JavaScript<br> <span style="font-size: 20px;">React / Angular /
+                            Node</span></article>
+                    <article class="skills-card">Kotlin<br> <span style="font-size: 20px;">Ktor</span></article>
+                    <article class="skills-card">Python<br> <span style="font-size: 20px;">Django</span></article>
+                    <article class="skills-card">Java<br> <span style="font-size: 20px;">Spring</span></article>
+                </div>
+            </div>
+        </section>
+        <section id="languages">
+            <h1 class="h1-languages">Languages</h1>
+            <div class="languages">
+                <h3 class="language-container">Spanish <br> Native</h3>
+                <h3 class="language-container">English <br> B2</h3>
+            </div>
+        </section>
+
+        <!-- Contenido de la sección Projects -->
+        <section id="projects">
+            <h1 class="h1-project">Projects</h1>
+            <div class="project-type">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1</p>
+            </div>
+            <div class="project-type">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2</p>
+            </div>
+            <div class="project-type">
+                <img src="proyecto3.jpg" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Descripción del proyecto 3</p>
+            </div>
+        </section>
+        <!-- Contenido de la sección Contact -->
+        <section id="contact" class="contact">
+            <h1 class="contact-h1">Contact</h1>
+            <div class="contact-flex">
+                <h3 class="contact-h3">Do you have a project? <br> Share me your idea. <br> Let's work together!</h3>
+                <div class="formulario">
+                    <form class="form-position" action="procesar_formulario.php" method="post">
+                        <div class="label">
+                            <label for="nombre">What's your name?</label><br>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Frank Castle">
+                            <br>
+                            <label for="email">What's your e-mail:</label><br>
+                            <input type="email" id="email" name="email" required placeholder="puni@email.com">
+                            <br>
+                            <label for="phone">What's your phone number:</label><br>
+                            <input type="phone" id="phone" name="phone" required placeholder="+1 234-567-890">
+                            <br>
+                            <label for="affair">How can I assist you?</label><br>
+                            <textarea name="affair" id="affair" rows="3" placeholder="Example: Web Page"></textarea><br>
+                            <label for="message">Give more details: </label><br>
+                            <textarea id="message" name="message" rows="10" cols="10" required
+                                placeholder="Example: I want to..."></textarea><br>
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+            </div>
+        </section>
+    </main>
+    <!--Contenido del Footer-->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="add-info">
+                <p>Or send me an e-mail:</p>
+                <p>E-mail: <a href="cam.tm.contact@gmail.com">cam.tm.contact@gmail.com</a></p>
+                <p>Phone: +507 6862-1093</a></p>
+            </div>
+            <div class="footer-content">
+                <p>&copy; 2023 Camilo Tuñón</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
